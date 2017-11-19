@@ -15,8 +15,7 @@ import java.util.UUID;
 @Data
 public class Role {
     @Id
-    @GeneratedValue
-    private UUID id;
+    private String id;
     private String description;
     @ManyToMany(mappedBy = "roles")
     private Set<User> users = new HashSet<>();
